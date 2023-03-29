@@ -1,20 +1,18 @@
-import test.Material;
-import test.Subject;
+import test.*;
+
 
 public class Runner {
-
     public static void main(String[] args) {
+        Material steel = new Material("steel", 7850.0);
 
-        // create a steel wire object with volume 0.03 cubic meters
-        Subject wire = new Subject("wire", Material.STEEL, 0.03);
+        Subject wire = new Subject("wire", steel, 0.03);
 
-        // output the object content using toString method
         System.out.println(wire);
 
-        // update the wire material to copper
-        wire.setMaterial(Material.COPPER);
+        Material copper = new Material("copper", 8500.0);
 
-        // output the wire mass
+        wire.setMaterial(copper);
+
         System.out.println("The wire mass is " + wire.getMass() + " kg.");
     }
 }

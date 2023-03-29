@@ -1,13 +1,12 @@
 package test;
 
 public class Subject {
-
     private String name;
     private Material material;
     private double volume;
 
     public Subject() {
-        // no-arg constructor
+
     }
 
     public Subject(String name, Material material, double volume) {
@@ -42,6 +41,6 @@ public class Subject {
 
     @Override
     public String toString() {
-        return name + ";" + material.toString() + ";" + volume + ";" + getMass();
+        return name + ";" + material + ";" + volume + ";" + getMass();
     }
 }

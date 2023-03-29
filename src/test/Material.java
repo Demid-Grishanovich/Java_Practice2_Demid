@@ -1,12 +1,11 @@
 package test;
 
 public class Material {
-
-    private String name;
-    private  double density;
+    private final String name;
+    private final double density;
 
     public Material() {
-        // no-arg constructor
+        this("unknown", 0.0);
     }
 
     public Material(String name, double density) {
@@ -29,5 +28,5 @@ public class Material {
 
     // constants for specific materials
     public static final Material STEEL = new Material("steel", 7850.0);
-    public static final  Material COPPER = new Material("copper", 8900.0);
+    public static final Material COPPER = new Material("copper", 8900.0);
 }
