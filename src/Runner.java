@@ -1,5 +1,5 @@
-import test.Material;
-import test.Subject;
+import test.*;
+
 
 public class Runner {
 
