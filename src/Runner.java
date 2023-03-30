@@ -3,15 +3,14 @@ import test.*;
 
 public class Runner {
     public static void main(String[] args) {
-        Material steel = new Material("steel", 7850.0);
 
-        Subject wire = new Subject("wire", steel, 0.03);
+
+        Subject wire = new Subject("wire", Material.STEEL, 0.03);
 
         System.out.println(wire);
 
-        Material copper = new Material("copper", 8500.0);
 
-        wire.setMaterial(copper);
+        wire.setMaterial(Material.COPPER);
 
         System.out.println("The wire mass is " + wire.getMass() + " kg.");
     }

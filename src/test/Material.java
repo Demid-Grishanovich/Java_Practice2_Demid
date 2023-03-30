@@ -1,14 +1,13 @@
 package test;
 
-public class Material {
+public enum Material {
+    STEEL("steel", 7850.0),
+    COPPER("copper", 8900.0);
+
     private final String name;
     private final double density;
 
-    public Material() {
-        this("unknown", 0.0);
-    }
-
-    public Material(String name, double density) {
+    Material(String name, double density) {
         this.name = name;
         this.density = density;
     }
@@ -25,8 +24,4 @@ public class Material {
     public String toString() {
         return name + ";" + density;
     }
-
-    // constants for specific materials
-    public static final Material STEEL = new Material("steel", 7850.0);
-    public static final Material COPPER = new Material("copper", 8900.0);
 }
